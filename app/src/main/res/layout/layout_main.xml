@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.lucydavidson.hw2.ImageCreation
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/theImage"
+        android:layout_weight='1'
+        android:layout_margin="10dp"
+        android:background="@color/colorImageBackground">
+    </com.example.lucydavidson.hw2.ImageCreation>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight='2'>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/element_text"
+            android:layout_margin="10dp"
+            android:layout_weight='4'
+            android:text="@string/select"
+            android:textAlignment="center"
+            android:textColor="@color/colorElement"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:paddingTop="35dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight='1'>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/red_text"
+                    android:layout_margin="10dp"
+                    android:layout_weight='1'
+                    android:paddingTop='5dp'
+                    android:text="@string/red"
+                    android:textColor="@color/colorRed"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize='25sp'/>
+
+                <SeekBar
+                    android:id="@+id/red_seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight='1'
+                    android:max='255' />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/green_text"
+                    android:layout_margin="10dp"
+                    android:layout_weight='1'
+                    android:text="@string/green"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold"
+                    android:textSize='25sp'
+                    android:textAlignment="center"
+                    android:paddingTop='5dp'/>
+
+                <SeekBar
+                    android:id="@+id/green_seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight='1'
+                    android:max='255' />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/blue_text"
+                    android:layout_margin="10dp"
+                    android:layout_weight='1'
+                    android:text="@string/blue"
+                    android:textStyle="bold"
+                    android:textSize='25sp'
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlue"
+                    android:paddingTop='5dp'/>
+
+               <SeekBar
+                   android:id="@+id/blue_seekBar"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight='1'
+                   android:max='255' />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

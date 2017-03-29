@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HOMEWORK 2</string>
+    <string name="select">SELECT IMAGE</string>
+    <string name="red">RED</string>
+    <string name="green">GREEN</string>
+    <string name="blue">BLUE</string>
+</resources>
